@@ -1,11 +1,11 @@
-# Webpack Vue
+# webpack-react
 
 > 使用 Webpack 搭建 React 开发环境
 
 ## 实现功能
 
 - ES6
-- Vue
+- React
 - Scss/css (modules / autoprefixer)
 - Lint (ESLint + Prettier)
 
