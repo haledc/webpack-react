@@ -2,12 +2,14 @@
 
 > 使用 Webpack 搭建 React 开发环境
 
+[with Typescript](https://github.com/haledc/webpack-react/tree/ts)
+
 ## 实现功能
 
 - ES6
 - React
 - Scss/css (modules / autoprefixer)
-- Lint (ESLint + Prettier)
+- Linter (ESLint + Prettier)
 
 ## 启动
 
