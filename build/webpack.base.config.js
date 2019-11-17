@@ -3,7 +3,7 @@ const path = require('path')
 
 const webpackBaseConfig = {
   entry: {
-    main: path.resolve(__dirname, '../src/index.js')
+    main: path.resolve(__dirname, '../src/index.tsx')
   },
   output: {
     path: path.resolve(__dirname, '../dist'),
@@ -14,14 +14,13 @@ const webpackBaseConfig = {
   module: {
     rules: [
       {
-        test: /\.jsx?$/,
-        loader: 'babel-loader',
-        include: /src/
+        test: /\.tsx?$/,
+        use: 'ts-loader'
       },
       {
-        test: /\.jsx?$/,
+        test: /\.tsx?$/,
         loader: 'eslint-loader',
-        exclude: /node_modules/,
+        include: /src/,
         enforce: 'pre'
       },
       {
@@ -54,7 +53,7 @@ const webpackBaseConfig = {
     ]
   },
   resolve: {
-    extensions: ['.js', '.jsx', '.json'],
+    extensions: ['.js', '.json', '.ts', '.tsx'],
     alias: {
       '@': path.resolve(__dirname, '../src')
     }

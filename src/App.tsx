@@ -4,14 +4,14 @@ import Nav from './components/Nav'
 import Home from './containers/Home'
 import About from './containers/About'
 
-const App = () => (
-  <>
-    <BrowserRouter>
+const App: React.FC = () => (
+  <BrowserRouter>
+    <div>
       <Nav />
       <Route path="/home" component={Home} />
       <Route path="/about" component={About} />
-    </BrowserRouter>
-  </>
+    </div>
+  </BrowserRouter>
 )
 
 export default App
