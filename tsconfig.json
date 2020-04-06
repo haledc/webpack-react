@@ -8,6 +8,7 @@
     "outDir": "dist",
     "jsx": "react",
     "allowSyntheticDefaultImports": true,
+    "experimentalDecorators": true,
     "removeComments": true
   }
 }
