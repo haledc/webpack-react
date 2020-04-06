@@ -24,7 +24,7 @@ const webpackBaseConfig = {
         enforce: 'pre'
       },
       {
-        test: /\.(git|png|jpe?g|svg)$/,
+        test: /\.(git|png|jpe?g|svg)$/i,
         loader: 'url-loader',
         options: {
           limit: 10240,
