@@ -1,5 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
+import avatar from '../assets/avatar.png'
+import todo from '../assets/todo.png'
 
 const Container = styled.div`
   color: #f00;
@@ -30,13 +32,8 @@ const Home: React.FC = () => {
     <Container>
       <Button onClick={handleClick}>click me</Button>
       <div>
-        <img
-          src={require('../assets/avatar.png')}
-          width="64"
-          height="64"
-          alt="logo"
-        />
-        <img src={require('../assets/todo.png')} />
+        <img src={avatar} width="64" height="64" alt="logo" />
+        <img src={todo} />
       </div>
     </Container>
   )
