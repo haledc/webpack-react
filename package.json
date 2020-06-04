@@ -4,8 +4,8 @@
   "description": "react develop environment for webpack",
   "main": "dist/index.html",
   "scripts": {
-    "dev": "webpack-dev-server --config build/webpack.dev.config.js",
-    "build": "webpack --config build/webpack.prod.config.js",
+    "dev": "webpack-dev-server --config build/webpack.config.dev.js",
+    "build": "webpack --config build/webpack.config.prod.js",
     "start": "node prod.server.js",
     "lint": "eslint --ext .js,jsx src/",
     "lint:fix": "eslint --fix --ext .js,.jss src/",
@@ -43,7 +43,6 @@
     "@babel/core": "^7.9.0",
     "@babel/plugin-proposal-class-properties": "^7.8.3",
     "@babel/plugin-syntax-dynamic-import": "^7.8.3",
-    "@babel/polyfill": "^7.8.7",
     "@babel/preset-env": "^7.9.0",
     "@babel/preset-react": "^7.9.4",
     "@commitlint/cli": "^8.3.5",
