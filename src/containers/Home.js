@@ -1,16 +1,20 @@
-import React from 'react'
+import React from "react";
 // support css modules
-import styles from './home.module.scss'
-import avatar from '../assets/avatar.png'
-import todo from '../assets/todo.png'
+import styles from "./home.module.scss";
+import avatar from "../assets/avatar.png";
+import todo from "../assets/todo.png";
+
+import { asyncPrint } from "../utils";
 
 const Home = () => {
   const handleClick = () => {
-    window.alert('clicked')
+    window.alert("clicked");
     setTimeout(() => {
-      console.log('test es6')
-    }, 2000)
-  }
+      console.log("test es6");
+    }, 2000);
+  };
+
+  asyncPrint();
 
   return (
     <div className={styles.home}>
@@ -22,7 +26,7 @@ const Home = () => {
         <img src={todo} />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

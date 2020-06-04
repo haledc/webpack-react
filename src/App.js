@@ -1,8 +1,8 @@
-import React from 'react'
-import { Route, BrowserRouter, Redirect } from 'react-router-dom'
-import Nav from './components/Nav'
-import Home from './containers/Home'
-import About from './containers/About'
+import React from "react";
+import { Route, BrowserRouter, Redirect } from "react-router-dom";
+import Nav from "./components/Nav";
+import Home from "./containers/Home";
+import About from "./containers/About";
 
 const App = () => (
   <>
@@ -19,6 +19,6 @@ const App = () => (
       </Route>
     </BrowserRouter>
   </>
-)
+);
 
-export default App
+export default App;
