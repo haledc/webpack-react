@@ -1,7 +1,8 @@
-import React from 'react'
-import styled from 'styled-components'
-import avatar from '../assets/avatar.png'
-import todo from '../assets/todo.png'
+import React from "react";
+import styled from "styled-components";
+import avatar from "../assets/avatar.png";
+import todo from "../assets/todo.png";
+import { asyncPrint } from "../utils";
 
 const Container = styled.div`
   color: #f00;
@@ -11,22 +12,24 @@ const Container = styled.div`
   flex-direction: column;
   box-sizing: border-box;
   padding: 5px;
-`
+`;
 
 const Button = styled.button`
   width: 100px;
   font-size: 20px;
   margin: 10px 0;
   color: red;
-`
+`;
 
 const Home: React.FC = () => {
   const handleClick = () => {
-    window.alert('clicked')
+    window.alert("clicked");
     setTimeout(() => {
-      console.log('test es6')
-    }, 2000)
-  }
+      console.log("test es6");
+    }, 2000);
+  };
+
+  asyncPrint();
 
   return (
     <Container>
@@ -36,7 +39,7 @@ const Home: React.FC = () => {
         <img src={todo} />
       </div>
     </Container>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;
