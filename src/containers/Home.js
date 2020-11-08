@@ -1,16 +1,16 @@
-import React from "react";
+import React from 'react';
 // support css modules
-import styles from "./home.module.scss";
-import avatar from "../assets/avatar.png";
-import todo from "../assets/todo.png";
+import styles from './home.module.less';
+import avatar from '../assets/avatar.png';
+import todo from '../assets/todo.png';
 
-import { asyncPrint } from "../utils";
+import { asyncPrint } from '../utils';
 
 const Home = () => {
   const handleClick = () => {
-    window.alert("clicked");
+    window.alert('clicked');
     setTimeout(() => {
-      console.log("test es6");
+      console.log('test es6');
     }, 2000);
   };
 

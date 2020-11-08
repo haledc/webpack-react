@@ -1,58 +1,58 @@
-const path = require("path");
-const merge = require("webpack-merge");
-const webpack = require("webpack");
-const HTMLWebpackPlugin = require("html-webpack-plugin");
-const baseConfig = require("./webpack.config");
+const path = require('path');
+const { merge } = require('webpack-merge');
+const webpack = require('webpack');
+const HTMLWebpackPlugin = require('html-webpack-plugin');
+const baseConfig = require('./webpack.config');
 
 const webpackDevConfig = merge(baseConfig, {
-  mode: "development",
-  devtool: "cheap-module-eval-source-map",
+  mode: 'development',
+  devtool: 'eval-cheap-module-source-map',
   module: {
     rules: [
       {
-        test: /\.(scss|css)$/,
-        exclude: /\.module\.(scss|css)$/,
+        test: /\.(less|css)$/,
+        exclude: /\.module\.(less|css)$/,
         use: [
-          "style-loader",
+          'style-loader',
           {
-            loader: "css-loader",
+            loader: 'css-loader',
             options: {
               importLoaders: 2,
             },
           },
           {
-            loader: "postcss-loader",
+            loader: 'postcss-loader',
             options: {
               sourceMap: true,
             },
           },
-          "sass-loader",
+          'less-loader',
         ],
       },
       {
-        test: /\.module\.(scss|css)$/,
+        test: /\.module\.(less|css)$/,
         use: [
-          "style-loader",
+          'style-loader',
           {
-            loader: "css-loader",
+            loader: 'css-loader',
             options: {
               importLoaders: 2,
               modules: true,
             },
           },
           {
-            loader: "postcss-loader",
+            loader: 'postcss-loader',
             options: {
               sourceMap: true,
             },
           },
-          "sass-loader",
+          'less-loader',
         ],
       },
     ],
   },
   devServer: {
-    host: "127.0.0.1",
+    host: '127.0.0.1',
     port: 3000,
     hot: true,
     hotOnly: true,
@@ -64,8 +64,8 @@ const webpackDevConfig = merge(baseConfig, {
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new HTMLWebpackPlugin({
-      template: path.resolve(__dirname, "../template.html"),
-      filename: "index.html",
+      template: path.resolve(__dirname, '../template.html'),
+      filename: 'index.html',
     }),
   ],
 });
