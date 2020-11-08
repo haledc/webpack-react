@@ -1,8 +1,8 @@
-import React from "react";
-import styled from "styled-components";
-import avatar from "../assets/avatar.png";
-import todo from "../assets/todo.png";
-import { asyncPrint } from "../utils";
+import React from 'react';
+import styled from 'styled-components';
+import avatar from '../assets/avatar.png';
+import todo from '../assets/todo.png';
+import { asyncPrint } from '../utils';
 
 const Container = styled.div`
   color: #f00;
@@ -23,9 +23,9 @@ const Button = styled.button`
 
 const Home: React.FC = () => {
   const handleClick = () => {
-    window.alert("clicked");
+    window.alert('clicked');
     setTimeout(() => {
-      console.log("test es6");
+      console.log('test es6');
     }, 2000);
   };
 

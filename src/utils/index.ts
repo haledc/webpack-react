@@ -1,3 +1,3 @@
 export async function asyncPrint() {
-  await console.log("hello world");
+  await console.log('hello world');
 }

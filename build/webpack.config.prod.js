@@ -1,28 +1,28 @@
-const path = require("path");
-const merge = require("webpack-merge");
-const { CleanWebpackPlugin } = require("clean-webpack-plugin");
-const HTMLWebpackPlugin = require("html-webpack-plugin");
-const baseConfig = require("./webpack.config");
+const path = require('path');
+const {merge} = require('webpack-merge');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const HTMLWebpackPlugin = require('html-webpack-plugin');
+const baseConfig = require('./webpack.config');
 
 const webpackProdConfig = merge(baseConfig, {
-  mode: "production",
+  mode: 'production',
   output: {
-    filename: "js/[name].[contenthash:8].js",
-    chunkFilename: "js/[name].thunk.[contenthash:8].js",
+    filename: 'js/[name].[contenthash:8].js',
+    chunkFilename: 'js/[name].thunk.[contenthash:8].js',
   },
-  devtool: "cheap-module-source-map",
+  devtool: 'cheap-module-source-map',
   optimization: {
     runtimeChunk: {
-      name: "runtime",
+      name: 'runtime',
     },
     splitChunks: {
-      chunks: "all",
+      chunks: 'all',
     },
   },
   plugins: [
     new HTMLWebpackPlugin({
-      template: path.resolve(__dirname, "../template.html"),
-      filename: "index.html",
+      template: path.resolve(__dirname, '../template.html'),
+      filename: 'index.html',
       minify: {
         collapseWhitespace: true,
         removeComments: true,
