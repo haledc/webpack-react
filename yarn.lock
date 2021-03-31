@@ -6315,19 +6315,9 @@ postcss@^7.0.0, postcss@^7.0.1, postcss@^7.0.27:
     source-map "^0.6.1"
     supports-color "^6.1.0"
 
-postcss@^8.1.4:
+postcss@^8.1.4, postcss@^8.1.6:
   version "8.1.6"
   resolved "https://registry.npm.taobao.org/postcss/download/postcss-8.1.6.tgz?cache=0&sync_timestamp=1604591918977&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fpostcss%2Fdownload%2Fpostcss-8.1.6.tgz#b022ba2cfb8701da234d073ed3128c5a384c35ff"
-  integrity sha1-sCK6LPuHAdojTQc+0xKMWjhMNf8=
-  dependencies:
-    colorette "^1.2.1"
-    line-column "^1.0.2"
-    nanoid "^3.1.16"
-    source-map "^0.6.1"
-
-postcss@^8.1.6:
-  version "8.1.6"
-  resolved "https://registry.npm.taobao.org/postcss/download/postcss-8.1.6.tgz?cache=0&sync_timestamp=1604592002382&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fpostcss%2Fdownload%2Fpostcss-8.1.6.tgz#b022ba2cfb8701da234d073ed3128c5a384c35ff"
   integrity sha1-sCK6LPuHAdojTQc+0xKMWjhMNf8=
   dependencies:
     colorette "^1.2.1"
@@ -8266,9 +8256,9 @@ xtend@~4.0.1:
   integrity sha1-u3J3n1+kZRhrH0OPZ0+jR/2121Q=
 
 y18n@^4.0.0:
-  version "4.0.0"
-  resolved "https://registry.npm.taobao.org/y18n/download/y18n-4.0.0.tgz#95ef94f85ecc81d007c264e190a120f0a3c8566b"
-  integrity sha1-le+U+F7MgdAHwmThkKEg8KPIVms=
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/y18n/-/y18n-4.0.1.tgz#8db2b83c31c5d75099bb890b23f3094891e247d4"
+  integrity sha512-wNcy4NvjMYL8gogWWYAO7ZFWFfHcbdbE57tZO8e4cbpj8tfUcwrwqSl3ad8HxpYWCdXcJUCeKKZS62Av1affwQ==
 
 yallist@^4.0.0:
   version "4.0.0"
